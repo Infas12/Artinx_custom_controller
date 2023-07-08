@@ -1,0 +1,9 @@
+<?xml version="1.0" ?>
+
+<launch>
+
+    <include file="$(find realsense2_camera)/launch/rs_t265.launch"/>
+
+    <node pkg="custom_controller" type="t265_control_node" name="t265_control_node" output="screen"/>
+
+</launch>
